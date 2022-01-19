@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Vulpelupe</name>
+        <update version="1.0">
+		    <file name="race-vulpelupe.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-tiefling.xml" />
+    	</update>
+	</info>
+	<element name="Vulpelupe" type="Race" source="Custom" id="ID_RACE_TIEFLING">
+		<description>
+			<p class="flavor">"Wait, I'm not a werewolf!"</p>
+			<h4>PHYSICAL</h4>
+			<p>Vulpelupes are similar to humans in shape and size but tend to have much slimmer builds and appear as anthropomorphic foxes. They have very lush and soft fur, particularly their tails. That fur varies from dark orange to a salt and pepper coat, depending on which region they come from (e.g. those who are from forest regions may have orange or grey fur while those from colder climates may have white fur). Their skull structure reveals lupine teeth and they have fully prehensile hands for using tools.</p>
+			<h4>HISTORY</h4>
+			<p>Vulpelupe's have been around since the beginning of the world, but nobody really knows where they came from. Were they the first humanoids? Or did a human make them because he was bored? Nobody knows, only the gods, though it's pretty obvious they weren't the first humans. Most people believe they rose up along the time humans learned to organize in a modern-day manner. The forces of Faerie leaking into Toril probably caused some changes in the local wildlife and, for whatever reason, the wolf decided to lie with the fox. Their offspring eventually evolved to become bipedal and possess prehensile hands, possibly due to breeding with primates.</p>
+            <h4>SOCIETY</h4>
+            <p>Vulpelupes have a very pack like society. They tend to keep families close as well as clans. Vulpelupe's usually live in or near small towns or in close-knit communities, typically near the wilderness. They love and care for people in their families or clans. Whenever they commit crimes in the clan, they are branded and casted out from their clan with great sorrow. In vulpelupe society, the males travel more than the females, mainly to patrol and protect their clan. For females, they stay with the cubs but have been known to venture out into the world, seeking new opportunities outside the tribe.</p>
+			<h4>TIEFLING NAMES</h4>
+			<p>Vulpelupe male names sometimes take after features of strength, like saber-like teeth. Female names are much less showy.</p>
+			<ul class="unstyled">
+				<li><strong>Male Names:</strong> Abha, Adora, Adrian, Bankim, Bansi, Bao, Bara, Sabaloo, Saber, Sabin</li>
+				<li><strong>Female  Names:</strong> Cassara, Kaa, Kabato, Taariq</li>
+			</ul>
+			<h4>VULEPELUPE TRAITS</h4>
+			<p>Fox wolf people.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Vulpelupes generally reach adulthood around the age of 15. They live to around the ages of 350 to 400.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Vulpelupe's alignment usually go to lawful neutral.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Vulpelupe's are generally about the size of humans and average about 5' to 6' and 120-180 lb. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Sneaky.</em></strong> You hail from crafty, slinking foxes. You are proficient in the Stealth skill.</p>
+			<p class="indent"><strong><em>Claws.</em></strong> Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Sylvan.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Abha, Adora, Adrian, Bankim, Bansi, Bao, Bara, Sabaloo, Saber, Sabin</set>
+			<set name="names" type="female">Cassara, Kaa, Kabato, Taariq</set>
+			<set name="height" modifier="2d6">5'0"</set>
+			<set name="weight" modifier="3d20">120 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2"/>
+			<stat name="innate speed" value="35" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SNEAKY" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CLAWS" />
+            <select type="Sub Race" name="Vulpelupe Subrace" supports="Vulpelupe" optional="false" />
+        </rules>
+    </element>
+    <element name="Sneaky" type="Racial Trait" source="dandwiki" id="ID_RACIAL_TRAIT_SNEAKY">
+        <description>
+            <p>You hail from crafty, slinking foxes. You are proficient in the Stealth skill.</p>
+        </description>
+        <sheet>
+            <description>You hail from crafty, slinking foxes. You are proficient in the Stealth skill.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_STEALTH" />
+        </rules>
+    </element>
+    <element name="Claws" type="Racial Trait" source="dandwiki" id="ID_RACIAL_TRAIT_CLAWS">
+        <description>
+            <p>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
+        </sheet>
+    </element>
+    <element name="Vulpelupe Subrace" type="Racial Trait" source="dandwiki" id="ID_CUSTOM_DANDW_RACIAL_TRAIT_VULPELUPE_VULPELUPE_SUBRACE">
+    <description>
+        <p>Two subraces of Vulpelupe exist in this world. Choose one for your character.</p>
+    </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Sub Race" name="Vulpelupe Subrace" supports="Vulpelupe" />
+        </rules>
+    </element>
+
+	<element name="Arctic Vulpelupe" type="Sub Race" source="dandwiki" id="ID_SUB_RACE_VULPELUPE_ARCTIC_VULPELUPE">
+		<supports>Vulpelupe</supports>
+		<description>
+			<p>You were born into the harsh environment of snow and ice, giving you unique abilities that have allowed you to survive much better within them.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+			<p class="indent"><strong><em>Snowy Bred.</em></strong> You know the snowy terrain like the back of your hand. You have advantage in Wisdom (Survival) checks when in arctic terrain. In addition you have resistance to cold damage.</p>
+            <p class="indent"><strong><em>Ice Magic.</em></strong> You know the ray of frost cantrip and can cast it at will. Your spellcasting ability for this cantrip is Intelligence.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SNOWY_BRED" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ICE_MAGIC" />
+		</rules>
+	</element>
+	<element name="Snowy Bred" type="Racial Trait" source="dandwiki" id="ID_RACIAL_TRAIT_SNOWY_BRED">
+		<description>
+			<p>You know the snowy terrain like the back of your hand. You have advantage in Wisdom (Survival) checks when in arctic terrain. In addition you have resistance to cold damage.</p>
+		</description>
+		<sheet display="false">
+			<description>You know the snowy terrain like the back of your hand. You have advantage in Wisdom (Survival) checks when in arctic terrain. In addition you have resistance to cold damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Ice Magic" type="Racial Trait" source="dandwiki" id="ID_RACIAL_TRAIT_ICE_MAGIC">
+		<description>
+			<p>You know the ray of frost cantrip and can cast it at will. Your spellcasting ability for this cantrip is Intelligence.</p>
+		</description>
+		<sheet>
+			<description>You know the ray of frost cantrip and can cast it at will. Your spellcasting ability for this cantrip is Intelligence.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+		</rules>
+	</element>
+</elements>
