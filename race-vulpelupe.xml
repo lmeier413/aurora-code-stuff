@@ -3,7 +3,7 @@
 	<info>
 		<name>Vulpelupe</name>
         <update version="1.0">
-		    <file name="race-vulpelupe.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-tiefling.xml" />
+		    <file name="race-vulpelupe.xml" url="https://raw.githubusercontent.com/gamingLupus/aurora-code-stuff/main/race-vulpelupe.xml?token=GHSAT0AAAAAABQXDJRRDGE242EJRZO6LKAQYPHVT3Q" />
     	</update>
 	</info>
 	<element name="Vulpelupe" type="Race" source="Custom" id="ID_RACE_TIEFLING">
