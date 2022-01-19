@@ -60,7 +60,7 @@
             <description>You hail from crafty, slinking foxes. You are proficient in the Stealth skill.</description>
         </sheet>
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_STEALTH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
         </rules>
     </element>
     <element name="Claws" type="Racial Trait" source="dandwiki" id="ID_RACIAL_TRAIT_CLAWS">
