@@ -3,7 +3,7 @@
 	<info>
 		<name>Vulpelupe</name>
         <update version="1.0">
-		    <file name="race-vulpelupe.xml" url="https://raw.githubusercontent.com/gamingLupus/aurora-code-stuff/main/race-vulpelupe.xml?token=GHSAT0AAAAAABQXDJRRDGE242EJRZO6LKAQYPHVT3Q" />
+		    <file name="race-vulpelupe.xml" url="https://raw.githubusercontent.com/gamingLupus/aurora-code-stuff/main/race-vulpelupe.xml?token=GHSAT0AAAAAABQXDJRRDGE242EJRZO6LKAQYPHVT3Q"/>
     	</update>
 	</info>
 	<element name="Vulpelupe" type="Race" source="Custom" id="ID_RACE_TIEFLING">
@@ -81,7 +81,43 @@
         </rules>
     </element>
 
-	<element name="Arctic Vulpelupe" type="Sub Race" source="dandwiki" id="ID_SUB_RACE_VULPELUPE_ARCTIC_VULPELUPE">
+	<element name="Forest Vulpelupe" type="Sub Race" source="dandwiki" id="ID_SUB_RACE_VULPELUPE_Forest_VULPELUPE">
+		<supports>Vulpelupe</supports>
+		<description>
+			<p>You were born into the difficult environment of the forest, giving you unique abilities that have allowed you to survive much better within them.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Hunter.</em></strong> You are versed well in weapons to hunt in the forest. You are proficient in the shortbow and dagger.</p>
+            <p class="indent"><strong><em>Forager.</em></strong> In addition to hunting, the forest yields a lot of other bounty. You have advantage in Wisdom (Nature) checks to identify food when in a forested terrain.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HUNTER" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_FORAGER" />
+		</rules>
+	</element>
+	<element name="Hunter" type="Racial Trait" source="dandwiki" id="ID_RACIAL_TRAIT_HUNTER">
+		<description>
+			<p>You are versed well in weapons to hunt in the forest. You are proficient in the shortbow and dagger.</p>
+		</description>
+		<sheet display="false">
+			<description>You are versed well in weapons to hunt in the forest. You are proficient in the shortbow and dagger.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+		</rules>
+	</element>
+	<element name="Forager" type="Racial Trait" source="dandwiki" id="ID_RACIAL_TRAIT_FORAGER">
+		<description>
+			<p> In addition to hunting, the forest yields a lot of other bounty. You have advantage in Wisdom (Nature) checks to identify food when in a forested terrain.</p>
+		</description>
+		<sheet>
+			<description> In addition to hunting, the forest yields a lot of other bounty. You have advantage in Wisdom (Nature) checks to identify food when in a forested terrain.</description>
+		</sheet>
+	</element>
+
+    <element name="Arctic Vulpelupe" type="Sub Race" source="dandwiki" id="ID_SUB_RACE_VULPELUPE_ARCTIC_VULPELUPE">
 		<supports>Vulpelupe</supports>
 		<description>
 			<p>You were born into the harsh environment of snow and ice, giving you unique abilities that have allowed you to survive much better within them.</p>
