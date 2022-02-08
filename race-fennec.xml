@@ -3,10 +3,10 @@
 	<info>
 		<name>Fennec</name>
         <update version="1.0">
-		    <file name="race-fennec.xml" url="https://raw.githubusercontent.com/gamingLupus/aurora-code-stuff/main//>
+		    <file name="race-fennec.xml" url="https://raw.githubusercontent.com/gamingLupus/aurora-code-stuff/main/race-fennec.xml?token=GHSAT0AAAAAABRMFRI55CTART3LPRGR5YFCYQC6FWA"/>
     	</update>
 	</info>
-    	<element name="Fennec" type="Race" source="Custom" id="ID_RACE_FENNEC">
+    <element name="Fennec" type="Race" source="Custom" id="ID_RACE_FENNEC">
 		<description>
 			<p class="flavor">"I may be small, but I'll still kick your ass!"</p>
 			<h4>PHYSICAL</h4>
