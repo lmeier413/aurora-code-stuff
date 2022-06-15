@@ -3,7 +3,7 @@
 	<info>
 		<name>Ailurans</name>
         <update version="1.0">
-		    <file name="race-ailuran.xml" url=""/>
+		    <file name="race-ailuran.xml" url="https://raw.githubusercontent.com/gamingLupus/aurora-code-stuff/main/race-ailuran?token=GHSAT0AAAAAABVUHUC3EG4OJ3PX4WKZRWCWYVJNJVA"/>
     	</update>
 	</info>
 	<element name="Ailuran" type="Race" source="Custom" id="ID_RACE_AILURAN">
