@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ailurans</name>
+        <update version="1.0">
+		    <file name="race-ailuran.xml" url=""/>
+    	</update>
+	</info>
+	<element name="Ailuran" type="Race" source="Custom" id="ID_RACE_AILURAN">
+		<description>
+			<p class="flavor">Ailurans are a small race, both in size and numbers. Living only in the mountainous regions to the east, they rely on their natural stealth and climbing capabilities to survive, as well as their natural friendship with nature as a gift from their goddess. Due to the fact that their goddess Ailurius isn't very well known or worshipped outside of their society, the Ailurans follow her guidance of hiding and staying out of conflict unless necessary. This has helped the Ailurans survive for many years, but also leads many to wonder if the Ailurans are even real. Only by seeing one, or proof of one can someone be truly assuaged of this belief.</p>
+			<h4>PEACEFUL COEXISTENCE</h4>
+			<p>Even with the mystery surrounding the Ailurans, there is a surprising large amount of information about them, spread through rumor, legend, and by those who have encountered them. Those who have seen an Ailuran or one of their treetop villages will tell you that they live in a peaceful coexistence with a race of bearfolk, also known as Ursae. These specific Ursae are black and white in color, are called Ailuroans, and live peacefully along side the Ailurans. They would also say that the Ailurans appear to be small in size, having red fur on most of their bodies, with white fur throughout the body, and black fur on their arms and legs. This coexistence with another race isn't seen very often among the Beastfolk, and is the only recorded example of two entire races coexisting in this way.</p>
+			<h4>ODD GODDESS</h4>
+			<p>The goddess Ailurius is believed to have created the Ailurans, given that they share similar names. But Ailurius is not just responsible for their creation, she is also believed to have shaped the Ailuroans to better acclimate them to their new environment after originally coming into her and the Ailurans domain many years ago. Ailurius is worshipped by the Ailurans and Ailuroans, and has no worship outside of her domain, unless an Ailuran or Ailuroan has left her domain to adventure. Ailurans hold druidism in an extremely high regard, with druids being in their highest class in society, as well as being the chief religious figures in their society.</p>
+            <h4>LITTLE CONTACT</h4>
+            <p>Ailurans don't have much contact to or from their domain, only small trade and the occasional territory dispute with other races living in the mountains where they live. If an outsider is let inside an Ailuran village, it is a sign of great trust, something many Ailurans don't have much of. Ailurans tend to make dealings with outsiders far from their home village, and usually away from any other Ailuran village. An outsider to an Ailuran is either a possible threat or a possible friend, be it a merchant, a warrior, or even a straggler from one of the exploration missions within the mountains. If a someone is let to Ailuran village and starts to be a threat, the entire village is expected to and will fight and attempt to kill the threat.</p>
+			<h4>AILURAN NAMES</h4>
+			<p>Ailuran names are given by the head druid, and is then kept for life. An Ailurans name, translated into Common or Elvish, would mean nothing, or come out as gibberish. But for each village and individual, the name of an Ailuran is one of the most important things to them, and while it doesn't mean anything in their or any language, it does symbolize something, whether it be trees, mountains, water, or anything that would have importance to an Ailuran.</p>
+            <p>Ailurans follow the same naming conventions, and there are no distinct male or female names.</p>
+			<ul class="unstyled">
+				<li><strong>Ailuran Names:</strong> Aliru, Ceyon, Ferein, Gaklin, Hifily, Lilio, Teoen, Wasfe</li>
+				<li><strong>Family Names:</strong> Ceied, Idifi, Lutri, Piyof, Sewike, Tyg, Whilge</li>
+			</ul>
+			<h4>AILURAN TRAITS</h4>
+			<p>Because of the Ailurans isolation, they have not spread as much as other Beastfolk. Because of this, all Ailurans share the same traits and have no biological splits in their race as a whole.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Ailurans tend to mature around 10 years of age, and generally live up to and around 50 years of age.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Given their isolation, peaceful demeanor, and focus on druidism, Ailurans tend towards a neutral alignment.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Ailurans are built for stealth and climbing, so their size isn't very big to aid in this ability. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+			<p class="indent"><strong><em>Heavy Fur.</em></strong> Your fur is built for a specific range of temperatures. You have resistance to cold damage, but you have weakness to fire damage.</p>
+			<p class="indent"><strong><em>Naturally Stealthy.</em></strong> You have a nature ability to hide. You are able to hide behind any creature or object at least one size bigger than you. You are also proficient in the Stealth skill.</p>
+            <p class="indent"><strong><em>Wild Nimbleness.</em></strong> Your body is built for climbing and quick movement. You have a base climbing speed of 30 feet, and you have advantage on climbing (Athletics) checks. You are also able to move through the space of any creature at least one size bigger than you at no extra cost. You are also proficient in the Athletics skill.</p>
+			<p class="indent"><strong><em>Claws.</em></strong> You have small claws on the ends of your hands. Your unarmed strikes are 1d4 + your Dexterity modifier.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Celestial.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="all">Aliru, Ceyon, Ferein, Gaklin, Hifily, Lilio, Teoen, Wasfe</set>
+			<set name="names" type="family">Ceied, Idifi, Lutri, Piyof, Sewike, Tyg, Whilge</set>
+            <set name="names-format">{{all}} {{family}}</set>
+			<set name="height" modifier="2d6">3'5"</set>
+			<set name="weight" modifier="3d20">60 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2"/>
+			<stat name="wisdom" value="1"/>
+			<stat name="innate speed" value="25" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HEAVY_FUR" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURALLY_STEALTHY" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_WILD_NIMBLENESS" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CLAWS" />
+        </rules>
+    </element>
+    <element name="Heavy Fur" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_SNEAKY">
+        <description>
+            <p>Your fur is built for a specific range of temperatures. You have resistance to cold damage, but you have weakness to fire damage.</p>
+        </description>
+        <sheet>
+            <description>Your fur is built for a specific range of temperatures. You have resistance to cold damage, but you have weakness to fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_WEAKNESS_FIRE" />
+        </rules>
+    </element>
+    <element name="Naturally Stealthy" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_CLAWS">
+        <description>
+            <p>You have a nature ability to hide. You are able to hide behind any creature or object at least one size bigger than you. You are also proficient in the Stealth skill.</p>
+        </description>
+        <sheet>
+            <description>You have a nature ability to hide. You are able to hide behind any creature or object at least one size bigger than you. You are also proficient in the Stealth skill.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+    <element name="Naturally Stealthy" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_CLAWS">
+        <description>
+            <p>Your body is built for climbing and quick movement. You have a base climbing speed of 30 feet, and you have advantage on climbing (Athletics) checks. You are also able to move through the space of any creature at least one size bigger than you at no extra cost. You are also proficient in the Athletics skill.</p>
+        </description>
+        <sheet>
+            <description>Your body is built for climbing and quick movement. You have a base climbing speed of 30 feet, and you have advantage on climbing (Athletics) checks. You are also able to move through the space of any creature at least one size bigger than you at no extra cost. You are also proficient in the Athletics skill.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        </rules>
+    </element>
+    <element name="Claws" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_CLAWS">
+        <description>
+            <p>You have small claws on the ends of your hands. Your unarmed strikes are 1d4 + your Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>You have small claws on the ends of your hands. Your unarmed strikes are 1d4 + your Dexterity modifier.</description>
+        </sheet>
+    </element>
+</elements>
