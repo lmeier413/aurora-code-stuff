@@ -29,9 +29,9 @@
 			<p class="indent"><strong><em>Alignment.</em></strong> Given their isolation, peaceful demeanor, and focus on druidism, Ailurans tend towards a neutral alignment.</p>
 			<p class="indent"><strong><em>Size.</em></strong> Ailurans are built for stealth and climbing, so their size isn't very big to aid in this ability. Your size is Small.</p>
 			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
-			<p class="indent"><strong><em>Heavy Fur.</em></strong> Your fur is built for a specific range of temperatures. You have resistance to cold damage, but you have weakness to fire damage.</p>
+			<p class="indent"><strong><em>Heavy Fur.</em></strong> Your fur is built for a specific range of temperatures. You have advantage against exhaustion inflicted by cold weather.</p>
 			<p class="indent"><strong><em>Naturally Stealthy.</em></strong> You have a nature ability to hide. You are able to hide behind any creature or object at least one size bigger than you. You are also proficient in the Stealth skill.</p>
-            <p class="indent"><strong><em>Wild Nimbleness.</em></strong> Your body is built for climbing and quick movement. You have a base climbing speed of 30 feet, and you have advantage on climbing (Athletics) checks. You are also able to move through the space of any creature at least one size bigger than you at no extra cost. You are also proficient in the Athletics skill.</p>
+         		<p class="indent"><strong><em>Wild Nimbleness.</em></strong> Your body is built for climbing and quick movement. You have a base climbing speed of 30 feet, and you have advantage on climbing (Athletics) checks. You are also proficient in the Athletics skill.</p>
 			<p class="indent"><strong><em>Claws.</em></strong> You have small claws on the ends of your hands. Your unarmed strikes are 1d4 + your Dexterity modifier.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Celestial.</p>
 		</description>
@@ -51,24 +51,20 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HEAVY_FUR" />
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURALLY_STEALTHY" />
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_WILD_NIMBLENESS" />
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CLAWS" />
+            		<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURALLY_STEALTHY" />
+            		<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WILD_NIMBLENESS" />
+            		<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CLAWS" />
         </rules>
     </element>
-    <element name="Heavy Fur" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_SNEAKY">
+    <element name="Heavy Fur" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_HEAVY_FUR">
         <description>
-            <p>Your fur is built for a specific range of temperatures. You have resistance to cold damage, but you have weakness to fire damage.</p>
+            <p>Your fur is built for a specific range of temperatures.You have advantage against exhaustion inflicted by cold weather.</p>
         </description>
         <sheet>
-            <description>Your fur is built for a specific range of temperatures. You have resistance to cold damage, but you have weakness to fire damage.</description>
+            <description>Your fur is built for a specific range of temperatures. You have advantage against exhaustion inflicted by cold weather.</description>
         </sheet>
-        <rules>
-            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
-            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_WEAKNESS_FIRE" />
-        </rules>
     </element>
-    <element name="Naturally Stealthy" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_CLAWS">
+    <element name="Naturally Stealthy" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_NATURALLY_STEALTHY">
         <description>
             <p>You have a nature ability to hide. You are able to hide behind any creature or object at least one size bigger than you. You are also proficient in the Stealth skill.</p>
         </description>
@@ -79,12 +75,12 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
         </rules>
     </element>
-    <element name="Naturally Stealthy" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_CLAWS">
+    <element name="Naturally Stealthy" type="Racial Trait" source="u/anextlomara" id="ID_RACIAL_TRAIT_WILD_NIMBLENESS">
         <description>
             <p>Your body is built for climbing and quick movement. You have a base climbing speed of 30 feet, and you have advantage on climbing (Athletics) checks. You are also able to move through the space of any creature at least one size bigger than you at no extra cost. You are also proficient in the Athletics skill.</p>
         </description>
         <sheet>
-            <description>Your body is built for climbing and quick movement. You have a base climbing speed of 30 feet, and you have advantage on climbing (Athletics) checks. You are also able to move through the space of any creature at least one size bigger than you at no extra cost. You are also proficient in the Athletics skill.</description>
+            <description>Your body is built for climbing and quick movement. You have a base climbing speed of 30 feet, and you have advantage on climbing (Athletics) checks. You are also proficient in the Athletics skill.</description>
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
